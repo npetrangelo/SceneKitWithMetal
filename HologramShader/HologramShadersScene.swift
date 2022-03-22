@@ -5,7 +5,6 @@
 //  Created by qe on 3/22/22.
 //
 
-import Foundation
 import SceneKit
 
 final class HologramShadersScene: SCNScene {
