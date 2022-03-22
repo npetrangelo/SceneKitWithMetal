@@ -17,7 +17,7 @@ final class HologramShadersScene: SCNScene {
         let node = SCNNode()
         node.castsShadow = false
         node.position = SCNVector3(0,0,0)
-        node.geometry = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        node.geometry = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0.25)
         rootNode.addChildNode(node)
         
         let program = SCNProgram()
