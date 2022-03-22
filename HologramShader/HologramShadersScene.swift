@@ -20,5 +20,16 @@ final class HologramShadersScene: SCNScene {
         node.position = SCNVector3(0,0,0)
         node.geometry = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
         rootNode.addChildNode(node)
+        
+        let program = SCNProgram()
+        program.vertexFunctionName = "textureSamplerVertex"
+        program.fragmentFunctionName = "textureSamplerFragment"
+        node.geometry?.firstMaterial?.program = program
+        
+        guard let textureImage = NSImage(named: "texture") else {
+            return
+        }
+        let materialProperty = SCNMaterialProperty(contents: textureImage)
+        node.geometry?.firstMaterial?.setValue(materialProperty, forKey: "customTexture")
     }
 }
