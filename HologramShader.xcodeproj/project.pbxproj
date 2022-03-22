@@ -16,6 +16,7 @@
 		90DE16AD27E9058C0093B082 /* HologramShaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16AC27E9058C0093B082 /* HologramShaderUITests.swift */; };
 		90DE16AF27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16AE27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift */; };
 		90DE16BC27EA4CB50093B082 /* HologramShadersScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16BB27EA4CB50093B082 /* HologramShadersScene.swift */; };
+		90DE16BE27EA500E0093B082 /* TextureSampler.metal in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16BD27EA500E0093B082 /* TextureSampler.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		90DE16AC27E9058C0093B082 /* HologramShaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShaderUITests.swift; sourceTree = "<group>"; };
 		90DE16AE27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		90DE16BB27EA4CB50093B082 /* HologramShadersScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShadersScene.swift; sourceTree = "<group>"; };
+		90DE16BD27EA500E0093B082 /* TextureSampler.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TextureSampler.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				90DE169627E9058C0093B082 /* Main.storyboard */,
 				90DE169927E9058C0093B082 /* HologramShader.entitlements */,
 				90DE16BB27EA4CB50093B082 /* HologramShadersScene.swift */,
+				90DE16BD27EA500E0093B082 /* TextureSampler.metal */,
 			);
 			path = HologramShader;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				90DE16BC27EA4CB50093B082 /* HologramShadersScene.swift in Sources */,
 				90DE169127E9058B0093B082 /* GameViewController.swift in Sources */,
+				90DE16BE27EA500E0093B082 /* TextureSampler.metal in Sources */,
 				90DE168F27E9058B0093B082 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,9 +433,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HologramShader/HologramShader.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -443,6 +449,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FAM.HologramShader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -454,9 +461,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = HologramShader/HologramShader.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -468,6 +477,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FAM.HologramShader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
