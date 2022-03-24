@@ -19,11 +19,13 @@ struct NodeBuffer {
 
 struct VertexInput {
     float3 position [[attribute(SCNVertexSemanticPosition)]];
+    float3 normal [[attribute(SCNVertexSemanticNormal)]];
     float2 uv [[attribute(SCNVertexSemanticTexcoord0)]];
 };
 
 struct VertexOut {
     float4 position [[position]];
+    float3 normal;
     float2 uv;
 };
 
@@ -31,6 +33,7 @@ vertex VertexOut textureSamplerVertex(VertexInput in [[stage_in]],
                                       constant NodeBuffer& scn_node [[buffer(1)]]) {
     VertexOut out;
     out.position = scn_node.modelViewProjectionTransform * float4(in.position, 1.0);
+    out.normal = in.normal;
     out.uv = in.uv;
     return out;
 }
@@ -38,5 +41,6 @@ vertex VertexOut textureSamplerVertex(VertexInput in [[stage_in]],
 fragment float4 textureSamplerFragment(VertexOut out [[stage_in]],
                                        texture2d<float, access::sample> customTexture [[texture(0)]]) {
     constexpr sampler textureSampler(coord::normalized, filter::linear, address::repeat);
-    return customTexture.sample(textureSampler, out.uv);
+//    return customTexture.sample(textureSampler, out.uv);
+    return float4(out.normal, 0.0);
 }
