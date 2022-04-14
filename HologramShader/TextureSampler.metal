@@ -40,7 +40,7 @@ vertex VertexOut textureSamplerVertex(VertexInput in [[stage_in]],
 
 fragment float4 textureSamplerFragment(VertexOut out [[stage_in]],
                                        texture2d<float, access::sample> customTexture [[texture(0)]]) {
-    constexpr sampler textureSampler(coord::normalized, filter::linear, address::repeat);
+//    constexpr sampler textureSampler(coord::normalized, filter::linear, address::repeat);
 //    return customTexture.sample(textureSampler, out.uv);
     return float4(out.normal, 0.0);
 }
