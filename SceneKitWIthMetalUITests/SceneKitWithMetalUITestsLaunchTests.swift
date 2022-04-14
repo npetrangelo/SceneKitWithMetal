@@ -1,13 +1,13 @@
 //
-//  HologramShaderUITestsLaunchTests.swift
-//  HologramShaderUITests
+//  SceneKitWithMetalUITestsLaunchTests.swift
+//  SceneKitWithMetalUITestsLaunchTests
 //
 //  Created by qe on 3/21/22.
 //
 
 import XCTest
 
-class HologramShaderUITestsLaunchTests: XCTestCase {
+class SceneKitWithMetalUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

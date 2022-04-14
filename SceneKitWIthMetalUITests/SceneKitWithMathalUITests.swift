@@ -1,13 +1,13 @@
 //
-//  HologramShaderUITests.swift
-//  HologramShaderUITests
+//  SceneKitWithMathalUITests.swift
+//  SceneKitWithMathalUITests
 //
 //  Created by qe on 3/21/22.
 //
 
 import XCTest
 
-class HologramShaderUITests: XCTestCase {
+class SceneKitWithMathalUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
