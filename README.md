@@ -1,2 +1,2 @@
-# HologramShader
-A project that uses raytracing via Metal shaders to simulate laser holography.
+# SceneKitWithMetal
+A project to explore how metal integrates with SceneKit
