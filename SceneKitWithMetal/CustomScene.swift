@@ -7,7 +7,7 @@
 
 import SceneKit
 
-final class HologramShadersScene: SCNScene {
+final class CustomScene: SCNScene {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

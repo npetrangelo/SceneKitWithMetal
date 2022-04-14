@@ -15,7 +15,7 @@
 		90DE16A327E9058C0093B082 /* HologramShaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16A227E9058C0093B082 /* HologramShaderTests.swift */; };
 		90DE16AD27E9058C0093B082 /* HologramShaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16AC27E9058C0093B082 /* HologramShaderUITests.swift */; };
 		90DE16AF27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16AE27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift */; };
-		90DE16BC27EA4CB50093B082 /* HologramShadersScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16BB27EA4CB50093B082 /* HologramShadersScene.swift */; };
+		90DE16BC27EA4CB50093B082 /* CustomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16BB27EA4CB50093B082 /* CustomScene.swift */; };
 		90DE16BE27EA500E0093B082 /* TextureSampler.metal in Sources */ = {isa = PBXBuildFile; fileRef = 90DE16BD27EA500E0093B082 /* TextureSampler.metal */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +43,13 @@
 		90DE169227E9058B0093B082 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		90DE169427E9058C0093B082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90DE169727E9058C0093B082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90DE169927E9058C0093B082 /* HologramShader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HologramShader.entitlements; sourceTree = "<group>"; };
+		90DE169927E9058C0093B082 /* SceneKitWithMetal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SceneKitWithMetal.entitlements; sourceTree = "<group>"; };
 		90DE169E27E9058C0093B082 /* HologramShaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HologramShaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DE16A227E9058C0093B082 /* HologramShaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShaderTests.swift; sourceTree = "<group>"; };
 		90DE16A827E9058C0093B082 /* HologramShaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HologramShaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DE16AC27E9058C0093B082 /* HologramShaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShaderUITests.swift; sourceTree = "<group>"; };
 		90DE16AE27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		90DE16BB27EA4CB50093B082 /* HologramShadersScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HologramShadersScene.swift; sourceTree = "<group>"; };
+		90DE16BB27EA4CB50093B082 /* CustomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScene.swift; sourceTree = "<group>"; };
 		90DE16BD27EA500E0093B082 /* TextureSampler.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TextureSampler.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +81,9 @@
 		90DE168227E9058B0093B082 = {
 			isa = PBXGroup;
 			children = (
-				90DE168D27E9058B0093B082 /* HologramShader */,
-				90DE16A127E9058C0093B082 /* HologramShaderTests */,
-				90DE16AB27E9058C0093B082 /* HologramShaderUITests */,
+				90DE168D27E9058B0093B082 /* SceneKitWithMetal */,
+				90DE16A127E9058C0093B082 /* SceneKitWithMetalTests */,
+				90DE16AB27E9058C0093B082 /* SceneKitWIthMetalUITests */,
 				90DE168C27E9058B0093B082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		90DE168D27E9058B0093B082 /* HologramShader */ = {
+		90DE168D27E9058B0093B082 /* SceneKitWithMetal */ = {
 			isa = PBXGroup;
 			children = (
 				90DE168E27E9058B0093B082 /* AppDelegate.swift */,
@@ -106,28 +106,28 @@
 				90DE169227E9058B0093B082 /* art.scnassets */,
 				90DE169427E9058C0093B082 /* Assets.xcassets */,
 				90DE169627E9058C0093B082 /* Main.storyboard */,
-				90DE169927E9058C0093B082 /* HologramShader.entitlements */,
-				90DE16BB27EA4CB50093B082 /* HologramShadersScene.swift */,
+				90DE169927E9058C0093B082 /* SceneKitWithMetal.entitlements */,
+				90DE16BB27EA4CB50093B082 /* CustomScene.swift */,
 				90DE16BD27EA500E0093B082 /* TextureSampler.metal */,
 			);
-			path = HologramShader;
+			path = SceneKitWithMetal;
 			sourceTree = "<group>";
 		};
-		90DE16A127E9058C0093B082 /* HologramShaderTests */ = {
+		90DE16A127E9058C0093B082 /* SceneKitWithMetalTests */ = {
 			isa = PBXGroup;
 			children = (
 				90DE16A227E9058C0093B082 /* HologramShaderTests.swift */,
 			);
-			path = HologramShaderTests;
+			path = SceneKitWithMetalTests;
 			sourceTree = "<group>";
 		};
-		90DE16AB27E9058C0093B082 /* HologramShaderUITests */ = {
+		90DE16AB27E9058C0093B082 /* SceneKitWIthMetalUITests */ = {
 			isa = PBXGroup;
 			children = (
 				90DE16AC27E9058C0093B082 /* HologramShaderUITests.swift */,
 				90DE16AE27E9058C0093B082 /* HologramShaderUITestsLaunchTests.swift */,
 			);
-			path = HologramShaderUITests;
+			path = SceneKitWIthMetalUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90DE168627E9058B0093B082 /* Build configuration list for PBXProject "HologramShader" */;
+			buildConfigurationList = 90DE168627E9058B0093B082 /* Build configuration list for PBXProject "SceneKitWithMetal" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90DE16BC27EA4CB50093B082 /* HologramShadersScene.swift in Sources */,
+				90DE16BC27EA4CB50093B082 /* CustomScene.swift in Sources */,
 				90DE169127E9058B0093B082 /* GameViewController.swift in Sources */,
 				90DE16BE27EA500E0093B082 /* TextureSampler.metal in Sources */,
 				90DE168F27E9058B0093B082 /* AppDelegate.swift in Sources */,
@@ -554,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90DE168627E9058B0093B082 /* Build configuration list for PBXProject "HologramShader" */ = {
+		90DE168627E9058B0093B082 /* Build configuration list for PBXProject "SceneKitWithMetal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90DE16B027E9058C0093B082 /* Debug */,

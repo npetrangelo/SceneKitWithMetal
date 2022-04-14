@@ -15,7 +15,7 @@ class GameViewController: NSViewController {
         
         // create a new scene
 //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        let scene = HologramShadersScene()
+        let scene = CustomScene()
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
